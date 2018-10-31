@@ -1,0 +1,65 @@
+﻿    V := data { a, b, c, d, e, f, i, j, k, l, m, n, g, h } ;
+ 
+    A := data { ( a, b ), ( a, c ), ( b, d ), ( c, d ), ( d, g ), ( e, f ), ( e, g ), ( f, h ), ( m, c ), ( n, a ), ( g, h ) } ;
+ 
+ 
+    cap := data table
+     a    b    c    d    f    g    h
+!  ---  ---  ---  ---  ---  ---  ---
+a       100  200
+b                 200
+c                 100
+d                            50
+e                       10   20
+f                                 20
+m             50
+n   50
+g                                 10
+    ;
+ 
+ 
+    K := data { ( a, d ), ( e, h ), ( m, d ) } ;
+ 
+    phi := data { ( a, d ) : 150,  ( e, h ) : 20,  ( m, d ) : 50 } ;
+ 
+ 
+    sf_count := data
+    { ( a, b, a, d ) : 1,  ( a, c, a, d ) : 1,  ( b, d, a, d ) : 1,  ( c, d, a, d ) : 1,  ( e, f, e, h ) : 1,  ( e, g, e, h ) : 1,
+      ( f, h, e, h ) : 1,  ( g, h, e, h ) : 1 } ;
+ 
+
+
+    y := data { ( a, b, a, d ) : 1,  ( c, d, a, d ) : 1,  ( e, f, e, h ) : 1,  ( m, c, m, d ) : 1,  ( g, h, e, h ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, d ) : 100,  ( a, c, a, d ) :  50,  ( b, d, a, d ) : 100,  ( c, d, a, d ) :  50,  ( c, d, m, d ) :  50,
+      ( e, f, e, h ) :  10,  ( e, g, e, h ) :  10,  ( f, h, e, h ) :  10,  ( m, c, m, d ) :  50,  ( g, h, e, h ) :  10 } ;
+ 
+    spliting_node := data { ( a, d ) : 1,  ( e, h ) : 1 } ;
+ 
+ 
+    sf_share := data
+    { ( a, b, a, b, a, d ) : 100,  ( a, b, b, d, a, d ) : 100,  ( a, c, a, c, a, d ) :  50,  ( a, c, c, d, a, d ) :  50,
+      ( e, f, e, f, e, h ) :  10,  ( e, f, f, h, e, h ) :  10,  ( e, g, e, g, e, h ) :  10,  ( e, g, g, h, e, h ) :  10 } ;
+ 
+    rcv_int := data { ( a, d ) : 2,  ( e, h ) : 2,  ( m, d ) : 1 } ;
+ 
+ 
+    sf_count := data
+    { ( a, b, a, d ) : 1,  ( a, c, a, d ) : 1,  ( b, d, a, d ) : 1,  ( c, d, a, d ) : 1,  ( e, f, e, h ) : 1,  ( e, g, e, h ) : 1,
+      ( f, h, e, h ) : 1,  ( g, h, e, h ) : 1 } ;
+ 
+    FlowSUM := 220 ;
+ 
+ 
+    sf_link_share := data
+    { ( a, b, a, d ) : 100,  ( a, c, a, d ) : 200,  ( b, d, a, d ) : 200,  ( c, d, a, d ) :  50,  ( e, f, e, h ) :  10,
+      ( e, g, e, h ) :  20,  ( f, h, e, h ) :  20,  ( g, h, e, h ) :  10 } ;
+ 
+    sf_bneck := data { ( a, b, a, b, a, d ) : 1,  ( a, c, c, d, a, d ) : 1,  ( e, f, e, f, e, h ) : 1,  ( e, g, g, h, e, h ) : 1 } ;
+ 
+    sf_bneck_count := data { ( a, b, a, d ) : 1,  ( c, d, a, d ) : 1,  ( e, f, e, h ) : 1,  ( g, h, e, h ) : 1 } ;
+ 
+    z := data { ( a, b, a, d ) : 1,  ( a, c, a, d ) : 1,  ( e, f, e, h ) : 1,  ( e, g, e, h ) : 1 } ;
+ 

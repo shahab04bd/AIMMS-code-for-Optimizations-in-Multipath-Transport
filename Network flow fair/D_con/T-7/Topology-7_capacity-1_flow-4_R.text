@@ -1,0 +1,68 @@
+﻿    V := data { a, b, c, d, e, f, i, j, k, l, m, n, g, h } ;
+ 
+    A := data { ( a, b ), ( a, c ), ( b, d ), ( c, d ), ( d, g ), ( e, f ), ( e, g ), ( f, h ), ( m, c ), ( n, a ), ( g, h ) } ;
+ 
+ 
+    cap := data table
+     a    b    c    d    f    g    h
+!  ---  ---  ---  ---  ---  ---  ---
+a       100  200
+b                 200
+c                 100
+d                            50
+e                       10   20
+f                                 20
+m             50
+n   50
+g                                 10
+    ;
+ 
+ 
+    K := data { ( a, d ), ( e, h ), ( m, d ), ( n, b ), ( g, h ) } ;
+ 
+    phi := data { ( a, d ) : 100,  ( e, h ) : 10,  ( m, d ) : 50,  ( n, b ) : 50,  ( g, h ) : 10 } ;
+ 
+    sf_count := data { ( a, d ) : 2 } ;
+ 
+
+
+ 
+    y := data
+    { ( a, b, a, d ) : 1,  ( a, b, n, b ) : 1,  ( c, d, a, d ) : 1,  ( c, d, m, d ) : 1,  ( e, f, e, h ) : 1,  ( m, c, m, d ) : 1,
+      ( n, a, n, b ) : 1,  ( g, h, g, h ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, d ) : 50,  ( a, b, n, b ) : 50,  ( a, c, a, d ) : 50,  ( b, d, a, d ) : 50,  ( c, d, a, d ) : 50,
+      ( c, d, m, d ) : 50,  ( e, f, e, h ) : 10,  ( f, h, e, h ) : 10,  ( m, c, m, d ) : 50,  ( n, a, n, b ) : 50,
+      ( g, h, g, h ) : 10 } ;
+ 
+    spliting_node := data { ( a, d ) : 1 } ;
+ 
+    sf_share := data { ( a, b, a, b, a, d ) : 50,  ( a, b, b, d, a, d ) : 50,  ( a, c, a, c, a, d ) : 50,  ( a, c, c, d, a, d ) : 50
+ } ;
+ 
+    rcv_int := data { ( a, d ) : 2,  ( e, h ) : 1,  ( m, d ) : 1,  ( n, b ) : 1,  ( g, h ) : 1 } ;
+ 
+    sf_count := data { ( a, d ) : 2 } ;
+ 
+    FlowSUM := 20120 ;
+ 
+    sf_link_share := data { } ;
+ 
+    sf_bneck := data { ( a, b, a, b, a, d ) : 1,  ( a, c, c, d, a, d ) : 1 } ;
+ 
+    sf_bneck_count := data { ( a, b, a, d ) : 1,  ( c, d, a, d ) : 1 } ;
+ 
+    net_share_diff := data { ( a, b, a, d ) : 25,  ( a, b, n, b ) : 25,  ( c, d, a, d ) : 25,  ( c, d, m, d ) : 25 } ;
+ 
+    net_share := data { ( a, b, a, d ) : 50,  ( a, b, n, b ) : 50,  ( c, d, a, d ) : 50,  ( c, d, m, d ) : 50 } ;
+ 
+    net_group_id_bin := data { ( a, b, a, d ) : 1,  ( a, b, n, b ) : 1,  ( c, d, a, d ) : 1,  ( c, d, m, d ) : 1 } ;
+ 
+    unused_cap := data { ( a, c ) : 150,  ( b, d ) : 150,  ( d, g ) : 50,  ( e, g ) : 20,  ( f, h ) : 10 } ;
+ 
+    z := data { ( a, b, a, d ) : 1,  ( a, c, a, d ) : 1 } ;
+ 
+    no_of_sf_on_link := data { ( a, b, a, d ) : 1,  ( a, c, a, d ) : 1,  ( b, d, a, d ) : 1,  ( c, d, a, d ) : 1 } ;
+ 

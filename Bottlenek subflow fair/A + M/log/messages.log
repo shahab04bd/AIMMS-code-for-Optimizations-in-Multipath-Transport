@@ -1,0 +1,183 @@
+﻿There is 62.313 Mb in use.
+Warning: The rows "subflow_iden_5(c,f,b,c,a,b,a,c)" and "subflow_iden_5(c,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(d,f,b,d,a,b,a,c)" and "subflow_iden_5(d,f,b,d,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(e,f,b,d,a,b,a,c)" and "subflow_iden_5(e,f,b,d,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 458 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 759 column bounds and eliminated 2893 rows and 362 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.03 sec.
+Warning: The rows "subflow_iden_5(c,f,b,c,a,b,a,c)" and "subflow_iden_5(c,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(c,f,b,d,a,b,a,c)" and "subflow_iden_5(c,f,b,d,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(e,f,b,e,a,b,a,c)" and "subflow_iden_5(e,f,b,e,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 744 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1617 column bounds and eliminated 6729 rows and 1162 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.05 sec.
+Warning: The rows "sf_share_4(c,f,m,n,f,i)" and "sf_share_4(e,f,m,n,f,i)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(c,f,m,n,f,i)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(c,f,k,n,f,i)" and "sf_share_4(f,i,k,n,i,n)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 523 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1171 column bounds and eliminated 6775 rows and 1607 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.03 sec.
+Warning: The rows "sf_share_4(e,f,m,n,f,n)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(c,f,m,n,f,n)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(c,f,k,n,f,n)" and "sf_share_4(e,f,k,n,f,n)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 589 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1431 column bounds and eliminated 8400 rows and 2013 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.03 sec.
+Warning: The rows "sf_share_4(e,f,m,n,f,n)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(e,f,m,n,f,n)" and "sf_share_4(f,i,m,n,i,k)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(c,f,m,n,f,n)" and "sf_share_4(f,i,m,n,i,k)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 817 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 2260 column bounds and eliminated 13066 rows and 3166 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.06 sec.
+Warning: The rows "sf_share_4(f,i,m,n,i,k)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(f,i,m,n,i,m)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(f,i,k,n,i,k)" and "sf_share_4(f,i,k,n,i,m)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 592 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 2462 column bounds and eliminated 14175 rows and 3422 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.06 sec.
+Warning: The rows "sf_share_4(d,g,b,d,g,h)" and "sf_share_4(e,g,b,d,g,h)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(d,g,b,d,g,h)" and "sf_share_4(n,a,b,d,a,d)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "sf_share_4(e,g,a,c,g,h)" and "sf_share_4(n,a,a,c,a,d)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 504 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1961 column bounds and eliminated 8471 rows and 2073 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.02 sec.
+Warning: The rows "subflow_iden_6(b,d,a,b,a,b,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_6(c,d,a,c,a,b,n,a)" and "subflow_iden_6(c,d,a,c,n,a,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_6(b,d,a,b,a,c,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,c)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 257 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1164 column bounds and eliminated 5258 rows and 1227 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.02 sec.
+Warning: The rows "subflow_iden_6(b,d,a,b,a,b,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_6(c,d,a,b,a,b,n,a)" and "subflow_iden_6(c,d,a,b,n,a,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_6(b,d,a,c,a,b,n,a)" and "subflow_iden_6(b,d,a,c,n,a,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 334 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1477 column bounds and eliminated 6425 rows and 1502 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.03 sec.
+Warning: The rows "subflow_iden_6(b,d,a,b,a,b,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_6(c,d,a,b,a,b,n,a)" and "subflow_iden_6(c,d,a,b,n,a,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_6(b,d,a,b,a,c,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,c)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 257 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1142 column bounds and eliminated 5137 rows and 1186 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.03 sec.
+Warning: The rows "subflow_iden_5(i,h,a,b,a,b,a,c)" and "subflow_iden_5(i,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(i,h,a,c,a,b,a,c)" and "subflow_iden_5(i,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(g,h,a,c,a,b,a,c)" and "subflow_iden_5(g,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 208 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1378 column bounds and eliminated 5285 rows and 1284 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.05 sec.
+Warning: The rows "subflow_iden_5(b,d,a,b,a,b,a,c)" and "subflow_iden_5(b,d,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(c,d,a,b,a,b,a,c)" and "subflow_iden_5(c,d,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(c,d,a,c,a,b,a,c)" and "subflow_iden_5(c,d,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 294 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 1959 column bounds and eliminated 8161 rows and 1916 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.05 sec.
+Warning: The rows "subflow_iden_5(b,d,a,b,a,b,a,c)" and "subflow_iden_5(b,d,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(c,d,a,b,a,b,a,c)" and "subflow_iden_5(c,d,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: The rows "subflow_iden_5(c,d,a,c,a,b,a,c)" and "subflow_iden_5(c,d,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min". 
+This may lead to non-unique shadow prices. 
+For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning: Only 3 out of 377 duplicate row warnings were reported. 
+See also option limit_reported_duplicate_column_row_warnings.
+AIMMS presolve changed 3123 column bounds and eliminated 13380 rows and 3289 columns.
+The presolved model contains only linear constraints and therefore the model type was changed into MIP.
+AIMMS presolve time = 0.09 sec.

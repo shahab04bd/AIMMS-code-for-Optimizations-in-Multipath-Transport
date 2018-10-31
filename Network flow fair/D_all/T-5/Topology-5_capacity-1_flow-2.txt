@@ -1,0 +1,22 @@
+﻿V  := DATA{a,b,c,d,e,f};
+
+A(i,j) := DATA{(a,b), (a,d), (a,c), (b,c), (b,e), (b,d), (d,e), (c,e), (c,f), (d,f), (e,f)};
+	
+
+							
+
+
+cap(i,j)  := DATA TABLE 
+	a	b	c	d	e	f	
+a		30	30	30				
+b			20	20	20			
+c					20	30	
+d					20	30		
+e						30						
+f														
+;
+
+K(s,t) := DATA{(a,f), (b,f), (a,e), (a,c), (a,d)};
+
+
+	

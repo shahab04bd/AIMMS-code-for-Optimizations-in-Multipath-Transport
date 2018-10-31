@@ -1,0 +1,16 @@
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,b,a,b,a,c)" and "subflow_iden_5(g,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,c,a,b,a,c)" and "subflow_iden_5(g,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,c,a,b,a,c)" and "subflow_iden_5(i,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 185 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,b,a,b,a,c)" and "subflow_iden_5(g,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,c,a,b,a,c)" and "subflow_iden_5(i,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,m,c,a,b,a,c)" and "subflow_iden_5(i,h,m,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 187 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.

@@ -1,0 +1,108 @@
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,b,a,b,a,c)" and "subflow_iden_5(g,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,b,a,b,a,c)" and "subflow_iden_5(i,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,c,a,b,a,c)" and "subflow_iden_5(i,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 161 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,b,a,b,a,c)" and "subflow_iden_5(g,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,b,a,b,a,c)" and "subflow_iden_5(i,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,c,a,b,a,c)" and "subflow_iden_5(i,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 184 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Semantic error at line 5052, column 14.
+The constraint "min_cap" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5057, column 14.
+The constraint "min_cap" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5062, column 14.
+The constraint "min_cap" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5067, column 14.
+The constraint "min_cap" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5072, column 14.
+The constraint "min_cap" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5077, column 14.
+The constraint "min_cap" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5082, column 16.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5087, column 16.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5092, column 16.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5097, column 16.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5102, column 16.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5107, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5112, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5117, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5122, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5127, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5132, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5137, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5142, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5147, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5152, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5157, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5162, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5167, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5172, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5177, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5182, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5187, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5192, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5197, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5202, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5207, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Semantic error at line 5212, column 15.
+The constraint "min_cap_1" without a suffix cannot be used inside the definition of a constraint.
+Syntax error at line 13 in the file Topology-8_capacity-1_flow-1.txt, column 38.
+The symbol ")" is not expected.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,b,a,b,a,c)" and "subflow_iden_5(g,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,c,a,b,a,c)" and "subflow_iden_5(g,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,b,a,b,a,c)" and "subflow_iden_5(i,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 176 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,b,a,b,a,c)" and "subflow_iden_5(g,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,c,a,b,a,c)" and "subflow_iden_5(g,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,b,a,b,a,c)" and "subflow_iden_5(i,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 176 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,b,a,b,a,c)" and "subflow_iden_5(g,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,c,a,b,a,c)" and "subflow_iden_5(g,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,b,a,b,a,c)" and "subflow_iden_5(i,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 176 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.

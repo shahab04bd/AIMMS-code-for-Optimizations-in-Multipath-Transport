@@ -1,0 +1,53 @@
+﻿
+The inputs are:
+
+    V := data { a, b, c, d, e, f, g, h } ;
+ 
+    A := data { ( a, b ), ( a, c ), ( b, d ), ( b, e ), ( c, g ), ( d, f ), ( e, f ), ( f, h ), ( g, h ) } ;
+ 
+ 
+    cap := data
+    { ( a, b ) : 25,  ( a, c ) : 15,  ( b, d ) : 10,  ( b, e ) : 10,  ( c, g ) : 10,  ( d, f ) : 15,  ( e, f ) : 15,  ( f, h ) : 25,
+  ( g, h ) : 15 } ;
+ 
+    K := data { ( a, f ), ( a, h ), ( c, g ) } ;
+ 
+The outputs are:
+
+    FlowSUM := 30 ;
+ 
+    spliting_node := data { } ;
+ 
+    sf_share := data { } ;
+ 
+    rcv_int := data { ( a, f ) : 1,  ( a, h ) : 1,  ( c, g ) : 1 } ;
+ 
+    sf_count := data { } ;
+ 
+ 
+    sf_link_share := data
+    { ( a, b, a, f ) : 10,  ( a, b, a, h ) :  5,  ( a, c, a, h ) : 10,  ( b, d, a, f ) : 10,  ( b, e, a, f ) :  5,
+      ( b, e, a, h ) :  5,  ( c, g, a, h ) : 10,  ( d, f, a, f ) : 10,  ( e, f, a, f ) :  5,  ( e, f, a, h ) :  5,
+      ( f, h, a, h ) :  5,  ( g, h, a, h ) : 10 } ;
+ 
+    max_sf_val := data { } ;
+ 
+    multipath_gain := data { } ;
+ 
+    net_diff := 0 ;
+ 
+    phi := data { ( a, f ) : 10,  ( a, h ) : 10,  ( c, g ) : 10 } ;
+ 
+    y := data { ( b, d, a, f ) : 1,  ( b, e, a, h ) : 1,  ( c, g, c, g ) : 1 } ;
+ 
+    sf_bneck := data { } ;
+ 
+ 
+    f := data
+    { ( a, b, a, f ) : 10,  ( a, b, a, h ) : 10,  ( b, d, a, f ) : 10,  ( b, e, a, h ) : 10,  ( c, g, c, g ) : 10,
+      ( d, f, a, f ) : 10,  ( e, f, a, h ) : 10,  ( f, h, a, h ) : 10 } ;
+ 
+    sf_flow := data { } ;
+ 
+    p := data { } ;
+ 

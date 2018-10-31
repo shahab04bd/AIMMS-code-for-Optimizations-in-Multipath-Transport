@@ -1,0 +1,74 @@
+﻿
+The inputs are:
+
+    V := data { a, b, c, d, e, f, g, h } ;
+ 
+    A := data { ( a, b ), ( a, c ), ( b, d ), ( b, e ), ( c, g ), ( d, f ), ( e, f ), ( f, h ), ( g, h ) } ;
+ 
+ 
+    cap := data
+    { ( a, b ) : 25,  ( a, c ) : 15,  ( b, d ) : 10,  ( b, e ) : 10,  ( c, g ) : 10,  ( d, f ) : 15,  ( e, f ) : 15,  ( f, h ) : 25,
+  ( g, h ) : 15 } ;
+ 
+    K := data { ( a, b ), ( a, f ), ( a, h ), ( c, g ) } ;
+ 
+The outputs are:
+
+    FlowSUM := 38.744 ;
+ 
+    spliting_node := data { ( a, f ) : 1,  ( a, h ) : 1 } ;
+ 
+ 
+    sf_share := data
+    { ( a, b, a, b, a, h ) : 7.498,  ( a, b, b, e, a, h ) : 7.498,  ( a, b, e, f, a, h ) : 7.498,  ( a, b, f, h, a, h ) : 7.498,
+      ( a, c, a, c, a, h ) : 1.253,  ( a, c, c, g, a, h ) : 1.253,  ( a, c, g, h, a, h ) : 1.253,  ( b, d, a, b, a, f ) : 6.249,
+      ( b, d, b, d, a, f ) : 6.249,  ( b, d, d, f, a, f ) : 6.249,  ( b, e, a, b, a, f ) : 2.502,  ( b, e, b, e, a, f ) : 2.502,
+      ( b, e, e, f, a, f ) : 2.502 } ;
+ 
+    rcv_int := data { ( a, b ) : 1,  ( a, f ) : 2,  ( a, h ) : 2,  ( c, g ) : 1 } ;
+ 
+ 
+    sf_count := data
+    { ( a, b, a, f ) : 2,  ( a, b, a, h ) : 1,  ( a, c, a, h ) : 1,  ( b, d, a, f ) : 1,  ( b, e, a, f ) : 1,  ( b, e, a, h ) : 1,
+      ( c, g, a, h ) : 1,  ( d, f, a, f ) : 1,  ( e, f, a, f ) : 1,  ( e, f, a, h ) : 1,  ( f, h, a, h ) : 1,  ( g, h, a, h ) : 1 } ;
+ 
+ 
+    sf_link_share := data
+    { ( a, b, a, f ) :  6.249,  ( a, b, a, h ) :  7.498,  ( a, c, a, h ) : 10.000,  ( b, d, a, f ) :  6.249,
+      ( b, d, a, h ) :  7.456,  ( b, e, a, f ) :  2.502,  ( b, e, a, h ) :  7.498,  ( c, g, a, h ) :  1.253,
+      ( d, f, a, f ) : 10.000,  ( d, f, a, h ) :  7.463,  ( e, f, a, f ) :  7.499,  ( e, f, a, h ) : 12.497,
+      ( f, h, a, h ) : 12.497,  ( g, h, a, h ) : 10.000 } ;
+ 
+    max_sf_val := data { ( a, f ) : 6.249,  ( a, h ) : 7.498 } ;
+ 
+    multipath_gain := data { ( a, f ) : 2.502,  ( a, h ) : 1.253 } ;
+ 
+    net_diff := 0.011 ;
+ 
+    phi := data { ( a, b ) : 8.751,  ( a, f ) : 8.751,  ( a, h ) : 8.751,  ( c, g ) : 8.747 } ;
+ 
+ 
+    y := data
+    { ( a, b, a, b ) : 1,  ( a, b, a, f ) : 1,  ( a, b, a, h ) : 1,  ( b, e, a, f ) : 1,  ( b, e, a, h ) : 1,  ( c, g, a, h ) : 1,
+      ( c, g, c, g ) : 1 } ;
+ 
+ 
+    sf_bneck := data
+    { ( a, b, a, b, a, h ) : 1,  ( a, b, b, e, a, h ) : 1,  ( a, c, c, g, a, h ) : 1,  ( b, d, a, b, a, f ) : 1,  ( b, e, b, e, a, f
+ ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, b ) : 8.751,  ( a, b, a, f ) : 8.751,  ( a, b, a, h ) : 7.498,  ( a, c, a, h ) : 1.253,  ( b, d, a, f ) : 6.249,
+      ( b, e, a, f ) : 2.502,  ( b, e, a, h ) : 7.498,  ( c, g, a, h ) : 1.253,  ( c, g, c, g ) : 8.747,  ( d, f, a, f ) : 6.249,
+      ( e, f, a, f ) : 2.502,  ( e, f, a, h ) : 7.498,  ( f, h, a, h ) : 7.498,  ( g, h, a, h ) : 1.253 } ;
+ 
+    sf_flow := data { } ;
+ 
+ 
+    p := data
+    { ( a, b, a, b, a, h ) : 1,  ( a, b, b, e, a, h ) : 1,  ( a, b, e, f, a, h ) : 1,  ( a, b, f, h, a, h ) : 1,
+      ( a, c, a, c, a, h ) : 1,  ( a, c, c, g, a, h ) : 1,  ( a, c, g, h, a, h ) : 1,  ( b, d, a, b, a, f ) : 1,
+      ( b, d, b, d, a, f ) : 1,  ( b, d, d, f, a, f ) : 1,  ( b, e, a, b, a, f ) : 1,  ( b, e, b, e, a, f ) : 1,
+      ( b, e, e, f, a, f ) : 1 } ;
+ 

@@ -1,0 +1,12 @@
+V  := DATA{a,b,c,d,e,f,m,n};
+
+
+
+A(i,j) := DATA{(a,b), (a,d), (b,c), (d,e),(c,f), (e,f), (m,b), (c,n)};						
+
+
+cap(i,j)  := DATA{(a,b) : 20, (a,d) : 20, (b,c) : 25, (d,e) : 10, (c,f) : 15, (e,f) : 15, (m,b) : 10, (c,n)  :15};	
+
+
+K(s,t) := DATA{(a,f), (a,c), (a,e), (m,n)};
+	

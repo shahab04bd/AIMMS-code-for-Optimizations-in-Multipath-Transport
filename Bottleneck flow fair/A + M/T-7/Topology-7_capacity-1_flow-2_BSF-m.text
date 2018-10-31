@@ -1,0 +1,72 @@
+﻿    V := data { a, b, c, d, e, f, i, j, k, l, m, n, g, h } ;
+ 
+    A := data { ( a, b ), ( a, c ), ( b, d ), ( c, d ), ( d, g ), ( e, f ), ( e, g ), ( f, h ), ( m, c ), ( n, a ), ( g, h ) } ;
+ 
+ 
+    cap := data table
+     a    b    c    d    f    g    h
+!  ---  ---  ---  ---  ---  ---  ---
+a       100  200
+b                 200
+c                 100
+d                            50
+e                       10   20
+f                                 20
+m             50
+n   50
+g                                 10
+    ;
+ 
+ 
+    K := data { ( a, d ), ( e, h ), ( m, h ), ( n, h ) } ;
+ 
+    phi := data { ( a, d ) : 193.333,  ( e, h ) : 13.333,  ( m, h ) : 3.333,  ( n, h ) : 3.333 } ;
+ 
+ 
+    sf_count := data
+    { ( a, b, a, d ) : 1,  ( a, c, a, d ) : 1,  ( b, d, a, d ) : 1,  ( c, d, a, d ) : 1,  ( e, f, e, h ) : 1,  ( e, g, e, h ) : 1,
+      ( f, h, e, h ) : 1,  ( g, h, e, h ) : 1 } ;
+ 
+
+
+    y := data { ( a, b, a, d ) : 1,  ( c, d, a, d ) : 1,  ( e, f, e, h ) : 1,  ( g, h, e, h ) : 1,  ( g, h, m, h ) : 1,  ( g, h, n,
+h ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, d ) : 96.667,  ( a, b, n, h ) :  3.333,  ( a, c, a, d ) : 96.667,  ( b, d, a, d ) : 96.667,
+      ( b, d, n, h ) :  3.333,  ( c, d, a, d ) : 96.667,  ( c, d, m, h ) :  3.333,  ( d, g, m, h ) :  3.333,
+      ( d, g, n, h ) :  3.333,  ( e, f, e, h ) : 10.000,  ( e, g, e, h ) :  3.333,  ( f, h, e, h ) : 10.000,
+      ( m, c, m, h ) :  3.333,  ( n, a, n, h ) :  3.333,  ( g, h, e, h ) :  3.333,  ( g, h, m, h ) :  3.333,
+      ( g, h, n, h ) :  3.333 } ;
+ 
+    spliting_node := data { ( a, d ) : 1,  ( e, h ) : 1 } ;
+ 
+ 
+    sf_share := data
+    { ( a, b, a, b, a, d ) : 96.667,  ( a, b, b, d, a, d ) : 96.667,  ( a, c, a, c, a, d ) : 96.667,
+      ( a, c, c, d, a, d ) : 96.667,  ( e, f, e, f, e, h ) : 10.000,  ( e, f, f, h, e, h ) : 10.000,
+      ( e, g, e, g, e, h ) :  3.333,  ( e, g, g, h, e, h ) :  3.333 } ;
+ 
+    rcv_int := data { ( a, d ) : 2,  ( e, h ) : 2,  ( m, h ) : 1,  ( n, h ) : 1 } ;
+ 
+ 
+    sf_count := data
+    { ( a, b, a, d ) : 1,  ( a, c, a, d ) : 1,  ( b, d, a, d ) : 1,  ( c, d, a, d ) : 1,  ( e, f, e, h ) : 1,  ( e, g, e, h ) : 1,
+      ( f, h, e, h ) : 1,  ( g, h, e, h ) : 1 } ;
+ 
+    FlowSUM := 206880 ;
+ 
+ 
+    sf_link_share := data
+    { ( a, b, a, d ) :  96.667,  ( a, c, a, d ) : 200.000,  ( a, c, n, h ) : 200.000,  ( b, d, a, d ) : 200.000,
+      ( b, d, n, h ) : 200.000,  ( c, d, a, d ) :  96.667,  ( d, g, m, h ) :  50.000,  ( d, g, n, h ) :  50.000,
+      ( e, f, e, h ) :  10.000,  ( e, g, e, h ) :  20.000,  ( f, h, e, h ) :  20.000,  ( m, c, m, h ) :  50.000,
+      ( n, a, n, h ) :  50.000,  ( g, h, e, h ) :   3.333 } ;
+ 
+    sf_bneck := data { ( a, b, a, b, a, d ) : 1,  ( a, c, c, d, a, d ) : 1,  ( e, f, e, f, e, h ) : 1,  ( e, g, g, h, e, h ) : 1 } ;
+ 
+    sf_bneck_count := data { ( a, b, a, d ) : 1,  ( c, d, a, d ) : 1,  ( e, f, e, h ) : 1,  ( g, h, e, h ) : 1 } ;
+ 
+    z := data { ( a, b, a, d ) : 1,  ( a, c, a, d ) : 1,  ( e, f, e, h ) : 1,  ( e, g, e, h ) : 1 } ;
+ 

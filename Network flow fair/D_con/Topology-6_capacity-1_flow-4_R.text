@@ -1,0 +1,92 @@
+﻿    V := data { a, b, c, d, e, f, i, j, k, l, m, n } ;
+ 
+    A := data { ( a, b ), ( a, d ), ( b, c ), ( c, f ), ( d, e ), ( e, f ), ( f, i ), ( i, j ), ( i, l ), ( j, k ), ( k, n ), ( l, m
+ ), ( m, n ) } ;
+ 
+ 
+    cap := data table
+     b    c    d    e    f    i    j    k    l    m    n
+!  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---
+a  100       100
+b        50
+c                      100
+d                  10
+e                      100
+f                            30
+i                                500       500
+j                                      10
+k                                                    500
+l                                               200
+m                                                    500
+    ;
+ 
+ 
+    K := data { ( a, c ), ( a, e ), ( a, f ), ( i, k ), ( i, m ), ( i, n ) } ;
+ 
+    phi := data { ( a, c ) : 50.000,  ( a, e ) : 5.000,  ( a, f ) : 5.000,  ( i, k ) : 9.999,  ( i, m ) : 190.002,  ( i, n ) : 9.999
+ } ;
+ 
+    sf_count := data { ( i, n ) : 2 } ;
+ 
+
+
+ 
+    y := data
+    { ( b, c, a, c ) : 1,  ( d, e, a, e ) : 1,  ( d, e, a, f ) : 1,  ( j, k, i, k ) : 1,  ( j, k, i, n ) : 1,  ( l, m, i, m ) : 1,
+      ( l, m, i, n ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, c ) :  50.000,  ( a, d, a, e ) :   5.000,  ( a, d, a, f ) :   5.000,  ( b, c, a, c ) :  50.000,
+      ( d, e, a, e ) :   5.000,  ( d, e, a, f ) :   5.000,  ( e, f, a, f ) :   5.000,  ( i, j, i, k ) :   9.999,
+      ( i, j, i, n ) :   0.001,  ( i, l, i, m ) : 190.002,  ( i, l, i, n ) :   9.998,  ( j, k, i, k ) :   9.999,
+      ( j, k, i, n ) :   0.001,  ( k, n, i, n ) :   0.001,  ( l, m, i, m ) : 190.002,  ( l, m, i, n ) :   9.998,
+      ( m, n, i, n ) :   9.998 } ;
+ 
+    spliting_node := data { ( i, n ) : 1 } ;
+ 
+ 
+    sf_share := data
+    { ( i, j, i, j, i, n ) : 0.001,  ( i, j, j, k, i, n ) : 0.001,  ( i, j, k, n, i, n ) : 0.001,  ( i, l, i, l, i, n ) : 9.998,
+      ( i, l, l, m, i, n ) : 9.998,  ( i, l, m, n, i, n ) : 9.998 } ;
+ 
+    rcv_int := data { ( a, c ) : 1,  ( a, e ) : 1,  ( a, f ) : 1,  ( i, k ) : 1,  ( i, m ) : 1,  ( i, n ) : 2 } ;
+ 
+    sf_count := data { ( i, n ) : 2 } ;
+ 
+    FlowSUM := 2089.997 ;
+ 
+    sf_link_share := data { } ;
+ 
+    sf_bneck := data { ( i, j, j, k, i, n ) : 1,  ( i, l, l, m, i, n ) : 1 } ;
+ 
+    sf_bneck_count := data { ( j, k, i, n ) : 1,  ( l, m, i, n ) : 1 } ;
+ 
+    net_share_diff := data { ( l, m, i, m ) : 90.001,  ( l, m, i, n ) : 90.001 } ;
+ 
+    net_share := data { ( l, m, i, m ) : 180.003,  ( l, m, i, n ) : 180.003 } ;
+ 
+ 
+    net_group_id_bin := data
+    { ( d, e, a, e ) : 1,  ( d, e, a, f ) : 1,  ( j, k, i, k ) : 1,  ( j, k, i, n ) : 1,  ( l, m, i, m ) : 1,  ( l, m, i, n ) : 1 } ;
+ 
+ 
+    unused_cap := data table
+         b        d        f        i        j        l        n
+!  -------  -------  -------  -------  -------  -------  -------
+a   50.000   90.000
+c                    100.000
+e                     95.000
+f                              30.000
+i                                      490.000  300.000
+k                                                        499.999
+m                                                        490.002
+    ;
+ 
+ 
+    z := data { ( i, j, i, n ) : 1,  ( i, l, i, n ) : 1 } ;
+ 
+ 
+    no_of_sf_on_link := data
+    { ( i, j, i, n ) : 1,  ( i, l, i, n ) : 1,  ( j, k, i, n ) : 1,  ( k, n, i, n ) : 1,  ( l, m, i, n ) : 1,  ( m, n, i, n ) : 1 } ;
+ 

@@ -1,0 +1,54 @@
+﻿    V := data { a, b, c, d, e, f } ;
+ 
+    A := data { ( a, b ), ( a, c ), ( a, d ), ( b, c ), ( b, d ), ( b, e ), ( c, e ), ( c, f ), ( d, e ), ( d, f ), ( e, f ) } ;
+ 
+ 
+    cap := data table
+    b   c   d   e   f
+!  --  --  --  --  --
+a  30  30  30
+b      20  20  20
+c              20  30
+d              20  30
+e                  30
+    ;
+ 
+ 
+    K := data { ( a, c ), ( a, d ), ( a, e ), ( a, f ), ( b, f ) } ;
+ 
+    phi := data { } ;
+ 
+    sf_count := data { } ;
+ 
+
+
+    y := data { } ;
+ 
+    f := data { } ;
+ 
+    spliting_node := data { } ;
+ 
+    sf_share := data { } ;
+ 
+    rcv_int := data { } ;
+ 
+    sf_count := data { } ;
+ 
+    FlowSUM := na ;
+ 
+    sf_link_share := data { } ;
+ 
+    sf_bneck := data { } ;
+ 
+    sf_bneck_count := data { } ;
+ 
+    net_share_diff := data { } ;
+ 
+    net_share := data { } ;
+ 
+    net_group_id_bin := data { } ;
+ 
+    unused_cap := data { } ;
+ 
+    z := data { } ;
+ 

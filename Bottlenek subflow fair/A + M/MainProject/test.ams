@@ -1,0 +1,471 @@
+## ams_version=1.0
+
+Model Main_test {
+    Set V {
+        Index: i,j,s,t,q,o,d,h,r,m,n,l;
+    }
+    Set A {
+        SubsetOf: (V,V);
+    }
+    Set K {
+        SubsetOf: (V,V);
+    }
+    Parameter cap {
+        IndexDomain: (i,j)|i<>j and (i,j) in A;
+        Range: nonnegative;
+    }
+    Parameter no_of_demands;
+    Parameter snd_int {
+        IndexDomain: (s,t) | (s,t) in K AND s <> t;
+        Range: integer;
+    }
+    Variable rcv_int {
+        IndexDomain: (s,t)| (s,t) in K AND s <> t;
+        Range: integer;
+        Definition: {
+            sum((i,j) |((i,j) in A AND j = t), x(i,j,s,t));
+        }
+    }
+    Variable f {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND (s,t) in K;
+        Range: nonnegative;
+    }
+    Variable phi {
+        IndexDomain: (s,t)|(s,t) in K AND s<>t;
+        Range: nonnegative;
+    }
+    Variable multipath_gain {
+        IndexDomain: (s,t) | (s,t) in K;
+        Range: nonnegative;
+        Definition: phi(s,t) * num(s,t);
+    }
+    Variable fully_utilized_links {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND (s,t) in K;
+        Range: free;
+    }
+    Variable FlowSUM {
+        Range: free;
+        Definition: sum((s,t)|(s,t)in K, phi(s,t)) + 1000 * sum((s,t) | (s,t) in K, multipath_gain(s,t));
+    }
+    Variable x {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND (s,t) in K AND i<>j AND s<>t;
+        Range: binary;
+    }
+    Variable y {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND (s,t) in K AND i<>j AND s<>t;
+        Range: binary;
+    }
+    Variable u {
+        IndexDomain: (i,j)|(i,j) in A AND i<>j;
+        Range: nonnegative;
+    }
+    Variable y_b {
+        IndexDomain: (s,t)|(s,t) in K AND s<>t;
+        Range: nonnegative;
+        Definition: {
+            sum((i,j)|(i,j) in A AND i<>j, y(i,j,s,t));
+        }
+    }
+    Variable sf_link_share {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND i<>j AND (s,t) in K;
+        Range: nonnegative;
+    }
+    Variable sf_count {
+        IndexDomain: (i,j,s,t) | (i,j) in A AND (s,t) in K AND s <> t;
+        Range: nonnegative;
+        Definition: {
+            sum((o,h)| (o,h) in A AND h <> s, p(o,h,i,j,s,t));
+        }
+    }
+    Variable sf_bneck_count {
+        IndexDomain: (i,j,s,t) | (i,j) in A AND (s,t) in K;
+        Range: nonnegative;
+        Definition: sum((o,h) | (o,h) in A , sf_bneck(o,h,i,j,s,t));
+    }
+    Variable sf_share {
+        IndexDomain: (o,h,i,j,s,t) | (o,h) in A AND (i,j) in A AND (s,t) in K AND s <> t AND h <> s;
+        Range: nonnegative;
+    }
+    Variable sf_flow {
+        IndexDomain: (o,h,s,t) | (o,h) in A AND (s,t) in K;
+        Range: nonnegative;
+    }
+    Variable x_b {
+        IndexDomain: (s,t)|(s,t) in K AND s<>t;
+        Range: nonnegative;
+        Definition: {
+            sum((i,j)|(i,j) in A AND i<>j, x(i,j,s,t));
+        }
+    }
+    Variable n_sub {
+        IndexDomain: (s,t) | (s,t) in K AND s <> t;
+        Range: nonnegative;
+    }
+    Variable sf_bneck {
+        IndexDomain: (o,h,i,j,s,t)|(o,h) in A AND h <>s AND (i,j) in A AND (s,t) in K AND s <> t;
+        Range: binary;
+    }
+    Variable z {
+        IndexDomain: (o,h,s,t) | (o,h) in A AND (s,t) in K AND s <> t;
+        Range: binary;
+    }
+    Variable x_d {
+        IndexDomain: (q,s,t)|q in V AND (s,t) in K AND s<>t;
+        Range: nonnegative;
+        Definition: {
+            sum((i,j)|(i,j) in A AND q=i, x(i,j,s,t));
+        }
+    }
+    Variable spliting_node {
+        IndexDomain: (s,t)|(s,t) in K AND s <> t;
+        Range: nonnegative;
+        Definition: sum (i|i in V, (x_d(i,s,t) - bin(i,s,t)));
+    }
+    Variable bin {
+        IndexDomain: (i,s,t)|i in V AND (s,t) in K AND s<>t;
+        Range: binary;
+    }
+    Variable num {
+        IndexDomain: (s,t) | (s,t) in K AND s <> t;
+        Range: binary;
+    }
+    Variable p {
+        IndexDomain: (o,h,i,j,s,t)|(o,h) in A AND (i,j) in A AND (s,t) in K AND i <> j AND s <> t AND h <> s;
+        Range: binary;
+    }
+    Variable max_share {
+        IndexDomain: (i,j,s,t)| (i,j) in A AND (s,t) in K AND s <> t;
+        Range: nonnegative;
+        Definition: sum((o,h)| (o,h) in A AND h <> s, sf_share(o,h,i,j,s,t));
+    }
+    Constraint flow_conserv {
+        IndexDomain: (q,s,t)|q in V AND (s,t) in K AND s<>t;
+        Definition: {
+            if (q=s) then
+            sum((i,j)|(i,j) in A AND i=q, f(i,j,s,t)) - sum((j,i)| (j,i) in A AND i=q, f(j,i,s,t)) = phi(s,t)
+            elseif (q=t) then
+            sum((i,j)|(i,j) in A AND i=q,f(i,j,s,t))-sum((j,i)|(j,i) in A AND i=q,f(j,i,s,t)) = -phi(s,t)
+            else sum((i,j)|(i,j) in A AND i=q,f(i,j,s,t)) - sum((j,i)|(j,i) in A AND i=q,f(j,i,s,t)) = 0
+            endif;
+        }
+    }
+    Constraint capacity_limitation {
+        IndexDomain: (i,j)|(i,j) in A AND i<>j;
+        Definition: {
+            sum((s,t)|(s,t) in K AND s<>t, f(i,j,s,t)) <= cap(i,j);
+        }
+    }
+    Constraint capacity_limitation_2 {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND (s,t) in K AND i<>j AND s<>t;
+        Definition: {
+            f(i,j,s,t) <= cap(i,j) * x(i,j,s,t);
+        }
+    }
+    Constraint path_constraints_1 {
+        IndexDomain: (s,t)|(s,t) in K AND s<>t;
+        Definition: {
+            sum((q,j)|q =t AND (q,j) in A, x(q,j,s,t))<=0;
+        }
+    }
+    Constraint path_constraints_2 {
+        IndexDomain: (s,t)|(s,t) in K AND s<>t;
+        Definition: {
+            sum((j,q)|q =s AND (j,q) in A, x(j,q,s,t))<=0;
+        }
+    }
+    Constraint path_constraints_3 {
+        IndexDomain: (q,s,t) | q in V AND (s,t) in K AND s <> t;
+        Definition: {
+            sum((i,j) | (i,j) in A AND i =q, x(i,j,s,t)) <= 10;
+        }
+    }
+    Constraint f_x_linking {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND (s,t) in K AND i<>j AND s<>t;
+        Definition: {
+            1000* f(i,j,s,t) >= x(i,j,s,t);
+        }
+    }
+    Constraint x_d_and_bin_linking_1 {
+        IndexDomain: (i,s,t)|i in V AND (s,t) in K AND s<>t;
+        Definition: {
+            bin(i,s,t) <= x_d(i,s,t);
+        }
+    }
+    Constraint x_d_and_bin_linking_2 {
+        IndexDomain: (i,s,t)| i in V AND (s,t) in K AND s<>t;
+        Definition: {
+            x_d(i,s,t) <=  50 * bin(i,s,t);
+        }
+    }
+    Constraint subflow_creation {
+        IndexDomain: (s,t)|(s,t) in K AND s<>t;
+        Definition: {
+            1 + spliting_node(s,t) <= 10;
+        }
+    }
+    Constraint subflow_iden_1 {
+        IndexDomain: (i,h,s,t)| i in V  AND (i,h) in A  AND (s,t) in K AND s<>t AND h <> s;
+        Definition: {
+            p(i,h,i,h,s,t) <= x_d(i,s,t) - bin(i,s,t);
+        }
+    }
+    Constraint subflow_iden_2 {
+        IndexDomain: (s,t)|(s,t) in K AND s <> t;
+        Definition: {
+            1 + spliting_node(s,t) <= sum((i,j)| (i,j) in A AND j <> s, p(i,j,i,j,s,t)) + 1 - num(s,t) ;
+        }
+    }
+    Constraint subflow_iden_3 {
+        IndexDomain: (s,t) | (s,t) in K AND s <> t;
+        Definition: {
+            1- num(s,t) + n_sub(s,t) <= 1 + spliting_node(s,t);
+        }
+    }
+    Constraint subflow_iden_4 {
+        IndexDomain: (s,t) | (s,t) in K AND s <> t;
+        Definition: {
+            sum((i,j)| (i,j) in A AND j <> s, p(i,j,i,j,s,t)) <= n_sub(s,t);
+        }
+    }
+    Constraint subflow_iden_5 {
+        IndexDomain: (i,t,s,j,l,m,o,q) |(i,t) in A AND (s,j) in A AND (l,m) in A AND (o,q) in A AND l =o  AND m <> q  AND j in V AND i in V AND (s,t) in K;
+        Definition: {
+            p(l,m,s,j,s,t) + p(l,m,i,t,s,t) +  p(o,q,i,t,s,t) +  p(o,q,s,j,s,t) <= 3;
+        }
+    }
+    Constraint sunflow_iden_7 {
+        IndexDomain: (i,t,s,j,l,m,o,q) |(i,t) in A AND (s,j) in A AND (l,m) in A AND (o,q) in A AND l <>o  AND m = q  AND j in V AND i in V AND (s,t) in K;
+        Definition: {
+            p(l,m,s,j,s,t) + p(l,m,i,t,s,t) +  p(o,q,i,t,s,t) +  p(o,q,s,j,s,t) <= 3;
+        }
+    }
+    Constraint subflow_iden_6 {
+        IndexDomain: (i,t,s,j,l,m,o,q) |(i,t) in A AND (s,j) in A AND (l,m) in A AND (o,q) in A AND l <>o  AND m <> q  AND j in V AND i in V AND (s,t) in K;
+        Definition: {
+            p(l,m,s,j,s,t) + p(l,m,i,t,s,t) +  p(o,q,i,t,s,t) +  p(o,q,s,j,s,t) <= 3;
+        }
+    }
+    Constraint z_creation_1 {
+        IndexDomain: (o,q,s,t)| (o,q) in A AND (s,t) in K AND s <> t AND q <> s;
+        Definition: sum((i,j)| (i,j) in A AND j=q AND o=i AND j <> s, p(o,q,i,j,s,t)) >= z(o,q,s,t);
+    }
+    Constraint z_creation_2 {
+        IndexDomain: (s,t)|(s,t) in K AND s <>t;
+        Definition: {
+            1 + spliting_node(s,t) <= sum((i,j) | (i,j) in A AND j <>s , z(i,j,s,t)) + 1 - num(s,t);
+        }
+    }
+    Constraint z_creation_3 {
+        IndexDomain: (o,h,i,j,s,t) | (o,h) in A AND (i,j) in A AND (s,t) in K AND s <> t AND h <> s;
+        Definition: {
+            p(o,h,i,j,s,t) <= z(o,h,s,t);
+        }
+    }
+    Constraint p_x_linking_1 {
+        IndexDomain: (o,h,i,j,s,t)| (o,h) in A AND (i,j) in A AND (s,t) in K AND s <> t AND h <> s;
+        Definition: {
+            p(o,h,i,j,s,t) <= x(i,j,s,t);
+        }
+    }
+    Constraint p_x_linking_2 {
+        IndexDomain: (i,j,s,t)| (i,j) in A AND (s,t) in K AND s <> t;
+        Definition: {
+            sum( (o,h) | (o,h) in A AND h <> s, p(o,h,i,j,s,t)) >= x(i,j,s,t) -1 + num(s,t);
+        }
+    }
+    Constraint least_p_in_path {
+        IndexDomain: (q,o,h,s,t)| q in V AND (o,h) in A AND (s,t) in K AND s <> t AND h <> s AND q <> t;
+        Definition: {
+            sum((i,j)| (i,j) in A AND i = q, p(o,h,i,j,s,t)) <= 1;
+        }
+    }
+    Constraint p_chain {
+        IndexDomain: (m,h,q,s,t)|(m,h) in A AND q in V AND (s,t) in K AND s <> t AND q <> s AND h <> s AND q <> t;
+        Definition: sum((i,j)|(i,j) in A AND j = q, p(m,h,i,j,s,t)) = sum((j,o)|(j,o) in A  AND j = q, p(m,h,j,o,s,t));
+    }
+    Constraint bottleneck_1 {
+        IndexDomain: (s,t)|(s,t) in K;
+        Definition: {
+            sum((i,j)|(i,j) in A, y(i,j,s,t)) >= 1;
+        }
+    }
+    Constraint bottleneck_2 {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND (s,t) in K;
+        Definition: {
+            sum((o,d)|(o,d) in K , f(i,j,o,d)) >= cap(i,j) * y(i,j,s,t);
+        }
+    }
+    Constraint sflow_bottleneck_1 {
+        IndexDomain: (o,h,i,j,s,t) |(o,h) in A AND h <>s AND (i,j) in A AND (s,t) in K AND s <> t;
+        Definition: {
+            sf_bneck(o,h,i,j,s,t) <= y(i,j,s,t);
+        }
+    }
+    Constraint sflow_bottleneck_2 {
+        IndexDomain: (o,h,i,j,s,t) | (o,h) in A AND (i,j) in A AND (s,t) in K AND s <> t AND h <> s;
+        Definition: {
+            sf_bneck(o,h,i,j,s,t) <= p(o,h,i,j,s,t);
+        }
+    }
+    Constraint sflow_botlleneck_4 {
+        IndexDomain: (o,h,s,t) | (o,h) in A AND (s,t) in K AND s <> t AND h <> s;
+        Definition: sum((i,j)|(i,j) in A, sf_bneck(o,h,i,j,s,t)) >= z(o,h,s,t);
+    }
+    Constraint sflow_bottlenecks_5 {
+        IndexDomain: (o,h,i,j,s,t) |(o,h) in A AND h <>s AND (i,j) in A AND (s,t) in K AND s <> t;
+        Definition: 100 * (1 - num(s,t)) + sf_bneck(o,h,i,j,s,t) >= y(i,j,s,t) - 100 * (1 - p(o,h,i,j,s,t));
+    }
+    Constraint x_y_linking {
+        IndexDomain: (i,j,s,t)|(i,j) in A AND (s,t) in K AND s<>t AND i<>j;
+        Definition: {
+            y(i,j,s,t) <= x(i,j,s,t);
+        }
+    }
+    Constraint multipath_flow_iden_1 {
+        IndexDomain: (s,t) | (s,t) in K AND s <> t;
+        Definition: {
+            num(s,t) <= sum(i | i in V, (x_d(i,s,t) - bin(i,s,t)));
+        }
+    }
+    Constraint multipath_flow_iden_2 {
+        IndexDomain: (s,t) | (s,t) in K AND s <> t;
+        Definition: {
+            50 *num(s,t) >= sum(i | i in V, (x_d(i,s,t) - bin(i,s,t)));
+        }
+    }
+    Constraint sf_share_1 {
+        IndexDomain: (i,j,s,t) | (i,j) in A AND (s,t) in K AND s <> t;
+        Definition: {
+            f(i,j,s,t) >= sum((o,h)| (o,h) in A AND h <> s, sf_share(o,h,i,j,s,t));
+        }
+    }
+    Constraint sf_share_2 {
+        IndexDomain: (i,j,s,t)| (i,j) in A AND (s,t) in K AND s <> t;
+        Definition: cap(i,j)* (1- num(s,t)) + sum((o,h)| (o,h) in A AND h <> s, sf_share(o,h,i,j,s,t)) >= f(i,j,s,t);
+    }
+    Constraint sf_share_3 {
+        IndexDomain: (o,h,i,j,s,t) | (i,j) in A AND (o,h) in A AND (s,t) in K;
+        Definition: {
+            sf_share(o,h,i,j,s,t) <= u(i,j);
+        }
+    }
+    Constraint sf_share_4 {
+        IndexDomain: (o,h,i,j,s,t) | (o,h) in A AND (i,j) in A AND (s,t) in K;
+        Definition: {
+            sf_share(o,h,i,j,s,t) >= u(i,j) - cap(i,j) * (1- sf_bneck(o,h,i,j,s,t));
+        }
+    }
+    Constraint sf_share_5 {
+        IndexDomain: (o,h,i,j,s,t) |(o,h) in A AND (i,j) in A AND (s,t) in K;
+        Definition: sf_share(o,h,i,j,s,t) <= 1000* p(o,h,i,j,s,t);
+    }
+    Constraint sf_share_6 {
+        IndexDomain: (o,h,i,j,s,t) |(o,h) in A AND (i,j) in A AND (s,t) in K;
+        Definition: 1000* sf_share(o,h,i,j,s,t) >= p(o,h,i,j,s,t);
+    }
+    Constraint sf_share_7 {
+        IndexDomain: (o,h,q,s,t) | (o,h) in A AND q in V  AND (s,t) in K AND q <> s AND q <> t;
+        Definition: sum((i,j) | (i,j) in A AND q = j, sf_share(o,h,i,j,s,t) ) = sum((j,m) | (j,m) in A AND j=q, sf_share(o,h,j,m,s,t));
+    }
+    Constraint bneck_flow_fair_1 {
+        IndexDomain: (i,j,s,t)| (i,j) in A AND (s,t) in K;
+        Definition: f(i,j,s,t) <= u(i,j) + cap(i,j) * num(s,t);
+    }
+    Constraint bneck_flow_fair_2 {
+        IndexDomain: (i,j,s,t)| (i,j) in A AND (s,t) in K;
+        Definition: f(i,j,s,t) >= u(i,j) - cap(i,j) * (1- y(i,j,s,t)) - cap(i,j)* num(s,t);
+    }
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    MathematicalProgram max_min {
+        Objective: FlowSUM;
+        Direction: maximize;
+        Constraints: AllConstraints;
+        Variables: AllVariables;
+        Type: MINLP;
+    }
+    File ResultFile {
+        Name: "Topology-4_capacity-2_flow-1_BSF-m.text";
+        Device: Disk;
+        Mode: replace;
+    }
+    Procedure MainInitialization;
+    Procedure MainExecution {
+        Body: {
+            read from file "Topology-4_capacity-2_flow-1.txt"; !input file name
+            
+            
+            myGMP := GMP::Instance::Generate( max_min ) ;
+            GMPOuterApprox::DoOuterApproximation( myGMP );
+            
+            !max_min.CallbackAOA := 'OuterApprox::BasicAlgorithm';
+            !option check_solution ='Yes';
+            !solve max_min;
+            
+            
+            PUT ResultFile;
+            
+            !PUT "\nThe outputs are:\n\n" ;
+            
+            DISPLAY V;
+            DISPLAY A;
+            DISPLAY cap;
+            DISPLAY K;
+            DISPLAY phi;
+            DISPLAY sf_count;
+            
+            
+            PUT "\n\n";
+            
+            !DISPLAY phi;
+            DISPLAY y;
+            DISPLAY f;
+            DISPLAY spliting_node;
+            DISPLAY sf_share;
+            DISPLAY rcv_int;
+            DISPLAY sf_count;
+            DISPLAY FlowSUM;
+            DISPLAY sf_link_share;
+            DISPLAY sf_bneck;
+            DISPLAY sf_bneck_count;
+            DISPLAY z;
+            
+            PUTCLOSE;
+        }
+    }
+    Procedure MainTermination {
+        Body: {
+            return DataManagementExit();
+        }
+    }
+    Module Outer_Approximation_Module {
+        SourceFile: "%AIMMSMODULES%\\OuterApproximation.ams";
+    }
+    Module GMP_Outer_Approximation_Module {
+        SourceFile: "%AIMMSMODULES%\\GMPOuterApproximation.ams";
+        Comment: {
+            "This module contains two outer approximation algorithms for solving Mixed Integer
+            Nonlinear Problems (MINLP). The basic algorithm can be found in the section \'AOA
+            Basic Algorithm\' and is based on the following two papers:
+            
+             M.A. Duran and I.E. Grossmann, An outer-approximation algorithm for a class of
+             mixed-integer nonlinear programs, Mathematical Programming 36 (1986), pp. 307-339.
+            
+             J. Viswanathan and I.E. Grossmann, A combined penalty function and outer-approximation
+             method for MINLP optimization, Computers and Chemical Engineering 14 (1990), pp. 769-778.
+            
+            The basic algorithm can be used for convex and non-convex problems with general integer
+            variables.
+            
+            The section \'AOA Convex Algorithm\' contains a variant of the outer approximation algorithm
+            that uses a single tree search. In this way the sequential solving of several MIP\'s is
+            avoided. The algorithm is based on the paper:
+            
+             I. Quesada and I.E. Grossmann, An LP/NLP Based Branch and Bound Algorithm for Convex MINLP
+             Optimization Problems, Computers and Chemical Engineering 16 (1992), pp. 937-947.
+            
+            This algorithm can only be used for convex problems (with general integer variables)."
+        }
+    }
+}

@@ -1,0 +1,83 @@
+﻿
+The inputs are:
+
+    V := data { a, b, c, d, e, f, m, n } ;
+ 
+    A := data { ( a, b ), ( a, d ), ( b, c ), ( b, e ), ( c, f ), ( c, n ), ( d, c ), ( d, e ), ( e, f ), ( m, b ) } ;
+ 
+ 
+    cap := data table
+    b   c   d   e   f   n
+!  --  --  --  --  --  --
+a  10      10
+b      10      10
+c                  10  10
+d      10      10
+e                  10
+m  10
+    ;
+ 
+ 
+    K := data { ( a, c ), ( a, f ), ( b, n ), ( m, c ), ( m, n ) } ;
+ 
+The outputs are:
+
+    phi := data { ( a, c ) : 10.000,  ( a, f ) : 10.000,  ( b, n ) : 3.333,  ( m, c ) : 3.333,  ( m, n ) : 3.333 } ;
+ 
+ 
+    y := data
+    { ( a, b, a, f ) : 1,  ( a, d, a, c ) : 1,  ( b, c, b, n ) : 1,  ( b, c, m, c ) : 1,  ( b, c, m, n ) : 1,  ( b, e, a, f ) : 1,
+      ( d, c, a, c ) : 1,  ( e, f, a, f ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, f ) : 10.000,  ( a, d, a, c ) : 10.000,  ( b, c, b, n ) :  3.333,  ( b, c, m, c ) :  3.333,
+      ( b, c, m, n ) :  3.333,  ( b, e, a, f ) : 10.000,  ( c, n, b, n ) :  3.333,  ( c, n, m, n ) :  3.333,
+      ( d, c, a, c ) : 10.000,  ( e, f, a, f ) : 10.000,  ( m, b, m, c ) :  3.333,  ( m, b, m, n ) :  3.333 } ;
+ 
+    spliting_node := data { } ;
+ 
+    sf_share := data { } ;
+ 
+    rcv_int := data { ( a, c ) : 1,  ( a, f ) : 1,  ( b, n ) : 1,  ( m, c ) : 1,  ( m, n ) : 1 } ;
+ 
+    sf_count := data { } ;
+ 
+    FlowSUM := 3000.000 ;
+ 
+    sf_link_share := data { } ;
+ 
+    sf_bneck := data { } ;
+ 
+    sf_bneck_count := data { } ;
+ 
+    net_share_bin := data { } ;
+ 
+    net_share_diff := data { } ;
+ 
+ 
+    net_share := data
+    { ( a, b, a, f ) : 10.000,  ( a, d, a, c ) : 10.000,  ( b, c, a, c ) :  2.500,  ( b, c, a, f ) :  2.500,
+      ( b, c, b, n ) :  3.333,  ( b, c, m, c ) :  3.333,  ( b, c, m, n ) :  3.333,  ( b, e, a, f ) : 10.000,
+      ( c, n, b, n ) :  3.333,  ( c, n, m, n ) :  3.333,  ( d, c, a, c ) : 10.000,  ( e, f, a, f ) : 10.000,
+      ( m, b, m, c ) :  3.333,  ( m, b, m, n ) :  3.333 } ;
+ 
+    net_group_id_bin := data { ( b, c, b, n ) : 1,  ( b, c, m, c ) : 1,  ( b, c, m, n ) : 1 } ;
+ 
+    y_b := data { ( a, c ) : 2,  ( a, f ) : 3,  ( b, n ) : 1,  ( m, c ) : 1,  ( m, n ) : 1 } ;
+ 
+ 
+    fully_utilized_links := data
+    { ( a, b, a, c ) :  9.990,  ( a, b, a, f ) : 10.000,  ( a, b, b, n ) :  9.990,  ( a, b, m, n ) :  9.990,
+      ( a, d, a, c ) : 10.000,  ( a, d, a, f ) :  9.990,  ( a, d, b, n ) :  9.990,  ( a, d, m, n ) :  9.990,
+      ( b, c, a, c ) :  3.332,  ( b, c, a, f ) :  3.332,  ( b, c, b, n ) : 10.000,  ( b, c, m, c ) : 10.000,
+      ( b, c, m, n ) : 10.000,  ( b, e, a, c ) :  9.990,  ( b, e, a, f ) : 10.000,  ( b, e, b, n ) :  9.990,
+      ( b, e, m, n ) :  9.990,  ( c, n, b, n ) :  6.667,  ( c, n, m, n ) :  6.667,  ( d, c, a, c ) : 10.000,
+      ( d, c, a, f ) :  9.990,  ( d, c, b, n ) :  9.990,  ( d, c, m, n ) :  9.990,  ( e, f, a, c ) :  9.990,
+      ( e, f, a, f ) : 10.000,  ( e, f, b, n ) :  9.990,  ( e, f, m, n ) :  9.990,  ( m, b, a, c ) :  3.332,
+      ( m, b, a, f ) :  3.332,  ( m, b, b, n ) :  6.666,  ( m, b, m, c ) :  6.667,  ( m, b, m, n ) :  6.667 } ;
+ 
+    test_1 := data { } ;
+ 
+    test_2 := 0 ;
+ 

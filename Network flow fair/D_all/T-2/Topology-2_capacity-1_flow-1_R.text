@@ -1,0 +1,44 @@
+﻿    V := data { a, b, c, d } ;
+ 
+    A := data { ( a, b ), ( b, c ), ( c, d ) } ;
+ 
+    cap := data { ( a, b ) : 10,  ( b, c ) : 10,  ( c, d ) : 10 } ;
+ 
+    K := data { ( a, b ), ( a, d ), ( c, d ) } ;
+ 
+    phi := data { ( a, b ) : 5,  ( a, d ) : 5,  ( c, d ) : 5 } ;
+ 
+    sf_count := data { } ;
+ 
+
+
+    y := data { ( a, b, a, b ) : 1,  ( a, b, a, d ) : 1,  ( c, d, a, d ) : 1,  ( c, d, c, d ) : 1 } ;
+ 
+    f := data { ( a, b, a, b ) : 5,  ( a, b, a, d ) : 5,  ( b, c, a, d ) : 5,  ( c, d, a, d ) : 5,  ( c, d, c, d ) : 5 } ;
+ 
+    spliting_node := data { } ;
+ 
+    sf_share := data { } ;
+ 
+    rcv_int := data { ( a, b ) : 1,  ( a, d ) : 1,  ( c, d ) : 1 } ;
+ 
+    sf_count := data { } ;
+ 
+    FlowSUM := 15 ;
+ 
+    sf_link_share := data { } ;
+ 
+    sf_bneck := data { } ;
+ 
+    sf_bneck_count := data { } ;
+ 
+    net_share_diff := data { } ;
+ 
+    net_share := data { } ;
+ 
+    net_group_id_bin := data { ( a, b, a, b ) : 1,  ( a, b, a, d ) : 1,  ( c, d, a, d ) : 1,  ( c, d, c, d ) : 1 } ;
+ 
+    unused_cap := data { ( b, c ) : 5 } ;
+ 
+    z := data { } ;
+ 

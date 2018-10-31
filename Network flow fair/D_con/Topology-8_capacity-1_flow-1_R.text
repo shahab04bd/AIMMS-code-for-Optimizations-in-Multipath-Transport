@@ -1,0 +1,99 @@
+﻿    V := data { a, b, c, d, e, f, i, j, k, l, m, n, g, h } ;
+ 
+    A := data { ( a, b ), ( a, c ), ( b, d ), ( b, f ), ( c, d ), ( c, e ), ( d, g ), ( e, i ), ( e, g ), ( f, g ), ( i, h ), ( m, c
+ ), ( n, b ), ( g, h ) } ;
+ 
+ 
+    cap := data table
+     b    c    d    e    f    i    g    h
+!  ---  ---  ---  ---  ---  ---  ---  ---
+a  100  100
+b             50        50
+c             50   50
+d                                100
+e                           100  100
+f                                100
+i                                     100
+m       100
+n  100
+g                                     100
+    ;
+ 
+ 
+    K := data { ( a, h ), ( m, h ), ( n, h ) } ;
+ 
+    phi := data { ( a, h ) : 50,  ( m, h ) : 50,  ( n, h ) : 50 } ;
+ 
+    sf_count := data { ( a, h ) : 3,  ( m, h ) : 2 } ;
+ 
+
+
+    y := data { ( b, f, n, h ) : 1,  ( c, e, a, h ) : 1,  ( c, e, m, h ) : 1,  ( g, h, a, h ) : 1,  ( g, h, m, h ) : 1,  ( g, h, n,
+h ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, h ) : 5.000e+001,  ( a, c, a, h ) : 2.000e-003,  ( b, d, a, h ) : 5.000e+001,  ( b, f, n, h ) : 5.000e+001,
+      ( c, d, a, h ) : 1.000e-003,  ( c, d, m, h ) : 1.000e-003,  ( c, e, a, h ) : 1.000e-003,  ( c, e, m, h ) : 5.000e+001,
+      ( d, g, a, h ) : 5.000e+001,  ( d, g, m, h ) : 1.000e-003,  ( e, i, a, h ) : 1.000e-003,  ( e, i, m, h ) : 5.000e+001,
+      ( f, g, n, h ) : 5.000e+001,  ( i, h, a, h ) : 1.000e-003,  ( i, h, m, h ) : 5.000e+001,  ( m, c, m, h ) : 5.000e+001,
+      ( n, b, n, h ) : 5.000e+001,  ( g, h, a, h ) : 5.000e+001,  ( g, h, m, h ) : 1.000e-003,  ( g, h, n, h ) : 5.000e+001 } ;
+ 
+    spliting_node := data { ( a, h ) : 2,  ( m, h ) : 1 } ;
+ 
+ 
+    sf_share := data
+    { ( a, b, a, b, a, h ) : 5.000e+001,  ( a, b, b, d, a, h ) : 5.000e+001,  ( a, b, d, g, a, h ) : 5.000e+001,
+      ( a, b, g, h, a, h ) : 5.000e+001,  ( c, d, a, c, a, h ) : 1.000e-003,  ( c, d, c, d, a, h ) : 1.000e-003,
+      ( c, d, c, d, m, h ) : 1.000e-003,  ( c, d, d, g, a, h ) : 1.000e-003,  ( c, d, d, g, m, h ) : 1.000e-003,
+      ( c, d, m, c, m, h ) : 1.000e-003,  ( c, d, g, h, a, h ) : 1.000e-003,  ( c, d, g, h, m, h ) : 1.000e-003,
+      ( c, e, a, c, a, h ) : 1.000e-003,  ( c, e, c, e, a, h ) : 1.000e-003,  ( c, e, c, e, m, h ) : 5.000e+001,
+      ( c, e, e, i, a, h ) : 1.000e-003,  ( c, e, e, i, m, h ) : 5.000e+001,  ( c, e, i, h, a, h ) : 1.000e-003,
+      ( c, e, i, h, m, h ) : 5.000e+001,  ( c, e, m, c, m, h ) : 5.000e+001 } ;
+ 
+    rcv_int := data { ( a, h ) : 2,  ( m, h ) : 2,  ( n, h ) : 1 } ;
+ 
+    sf_count := data { ( a, h ) : 3,  ( m, h ) : 2 } ;
+ 
+    FlowSUM := 5150 ;
+ 
+    sf_link_share := data { } ;
+ 
+ 
+    sf_bneck := data
+    { ( a, b, g, h, a, h ) : 1,  ( c, d, g, h, a, h ) : 1,  ( c, d, g, h, m, h ) : 1,  ( c, e, c, e, a, h ) : 1,  ( c, e, c, e, m, h
+ ) : 1 } ;
+ 
+    sf_bneck_count := data { ( c, e, a, h ) : 1,  ( c, e, m, h ) : 1,  ( g, h, a, h ) : 2,  ( g, h, m, h ) : 1 } ;
+ 
+    net_share_diff := data { } ;
+ 
+    net_share := data { } ;
+ 
+    net_group_id_bin := data { ( c, e, a, h ) : 1,  ( c, e, m, h ) : 1,  ( g, h, a, h ) : 1,  ( g, h, m, h ) : 1,  ( g, h, n, h ) :
+1 } ;
+ 
+ 
+    unused_cap := data table
+         b        c        d        i        g        h
+!  -------  -------  -------  -------  -------  -------
+a   50.002   99.998
+b                      0.002
+c                     49.998
+d                                       50.000
+e                              50.000  100.000
+f                                       50.000
+i                                                50.000
+m            50.000
+n   50.000
+    ;
+ 
+ 
+    z := data { ( a, b, a, h ) : 1,  ( c, d, a, h ) : 1,  ( c, d, m, h ) : 1,  ( c, e, a, h ) : 1,  ( c, e, m, h ) : 1 } ;
+ 
+ 
+    no_of_sf_on_link := data
+    { ( a, b, a, h ) : 1,  ( a, c, a, h ) : 2,  ( b, d, a, h ) : 1,  ( c, d, a, h ) : 1,  ( c, d, m, h ) : 1,  ( c, e, a, h ) : 1,
+      ( c, e, m, h ) : 1,  ( d, g, a, h ) : 2,  ( d, g, m, h ) : 1,  ( e, i, a, h ) : 1,  ( e, i, m, h ) : 1,  ( i, h, a, h ) : 1,
+      ( i, h, m, h ) : 1,  ( m, c, m, h ) : 2,  ( g, h, a, h ) : 2,  ( g, h, m, h ) : 1 } ;
+ 

@@ -1,0 +1,64 @@
+﻿    V := data { a, b, c, d, e, f, i, j, k, l, m, n } ;
+ 
+    A := data { ( a, b ), ( a, d ), ( b, c ), ( c, f ), ( d, e ), ( e, f ), ( f, i ), ( i, j ), ( i, l ), ( j, k ), ( k, n ), ( l, m
+ ), ( m, n ) } ;
+ 
+ 
+    cap := data table
+     b    c    d    e    f    i    j    k    l    m    n
+!  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---  ---
+a  100       100
+b        50
+c                      100
+d                  10
+e                      100
+f                            30
+i                                500       500
+j                                      10
+k                                                    500
+l                                               200
+m                                                    500
+    ;
+ 
+ 
+    K := data { ( a, c ), ( a, f ), ( a, i ), ( f, n ), ( i, k ), ( i, n ) } ;
+ 
+    phi := data { ( a, c ) : 50,  ( a, f ) : 5,  ( a, i ) : 5,  ( f, n ) : 5,  ( i, k ) : 5,  ( i, n ) : 200 } ;
+ 
+    sf_count := data { } ;
+ 
+
+
+    y := data { ( b, c, a, c ) : 1,  ( d, e, a, f ) : 1,  ( d, e, a, i ) : 1,  ( j, k, f, n ) : 1,  ( j, k, i, k ) : 1,  ( l, m, i,
+n ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, c ) :  50,  ( a, d, a, f ) :   5,  ( a, d, a, i ) :   5,  ( b, c, a, c ) :  50,  ( d, e, a, f ) :   5,
+      ( d, e, a, i ) :   5,  ( e, f, a, f ) :   5,  ( e, f, a, i ) :   5,  ( f, i, a, i ) :   5,  ( f, i, f, n ) :   5,
+      ( i, j, f, n ) :   5,  ( i, j, i, k ) :   5,  ( i, l, i, n ) : 200,  ( j, k, f, n ) :   5,  ( j, k, i, k ) :   5,
+      ( k, n, f, n ) :   5,  ( l, m, i, n ) : 200,  ( m, n, i, n ) : 200 } ;
+ 
+    spliting_node := data { } ;
+ 
+    sf_share := data { } ;
+ 
+    rcv_int := data { ( a, c ) : 1,  ( a, f ) : 1,  ( a, i ) : 1,  ( f, n ) : 1,  ( i, k ) : 1,  ( i, n ) : 1 } ;
+ 
+    sf_count := data { } ;
+ 
+    FlowSUM := 270 ;
+ 
+ 
+    sf_link_share := data
+    { ( a, d, a, f ) : 100,  ( a, d, a, i ) : 100,  ( c, f, a, f ) : 100,  ( c, f, a, i ) : 100,  ( e, f, a, f ) : 100,
+      ( e, f, a, i ) : 100,  ( i, j, f, n ) : 500,  ( i, j, i, k ) : 500,  ( i, j, i, n ) : 500,  ( i, l, f, n ) : 500,
+      ( i, l, i, n ) : 500,  ( j, k, i, k ) :  10,  ( k, n, f, n ) : 500,  ( k, n, i, n ) : 500,  ( m, n, f, n ) : 500,
+      ( m, n, i, n ) : 500 } ;
+ 
+    sf_bneck := data { } ;
+ 
+    sf_bneck_count := data { } ;
+ 
+    z := data { } ;
+ 

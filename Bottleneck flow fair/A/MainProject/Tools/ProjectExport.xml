@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ExportSettings>
+	<ExcludedFile>backup</ExcludedFile>
+	<ExcludedFile>data\max_flow_data.data</ExcludedFile>
+	<ExcludedFile>data\max_min.data</ExcludedFile>
+	<ExcludedFile>data\max_min_6-nodes-scenario.data</ExcludedFile>
+	<ExcludedFile>data\model_3.data</ExcludedFile>
+	<ExcludedFile>data\model_4.data</ExcludedFile>
+	<ExcludedFile>data\multipath-model-1.data</ExcludedFile>
+	<ExcludedFile>data\multipath-model-3.data</ExcludedFile>
+	<ExcludedFile>log</ExcludedFile>
+</ExportSettings>

@@ -1,0 +1,20 @@
+ 
+ 
+    C O N O P T 3   version 3.14V
+    Copyright (C)   ARKI Consulting and Development A/S
+                    Bagsvaerdvej 246 A
+                    DK-2880 Bagsvaerd, Denmark
+ 
+ 
+    The model has 984 variables and 3419 constraints
+    with 10966 Jacobian elements, 252 of which are nonlinear.
+    The Hessian of the Lagrangian has 45 elements on the diagonal,
+    171 elements below the diagonal, and 45 nonlinear variables.
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+ 
+ CONOPT time Total                            0.015 seconds
+   of which: Function evaluations             0.000 =  0.0%
+             1st Derivative evaluations       0.000 =  0.0%
+ 

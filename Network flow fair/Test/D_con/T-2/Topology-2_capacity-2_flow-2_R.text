@@ -1,0 +1,47 @@
+﻿    V := data { a, b, c, d } ;
+ 
+    A := data { ( a, b ), ( b, c ), ( c, d ) } ;
+ 
+    cap := data { ( a, b ) : 20,  ( b, c ) : 10,  ( c, d ) : 10 } ;
+ 
+    K := data { ( a, c ), ( a, d ), ( b, d ) } ;
+ 
+    phi := data { ( a, c ) : 3.333,  ( a, d ) : 3.333,  ( b, d ) : 3.333 } ;
+ 
+    sf_count := data { } ;
+ 
+
+
+    y := data { ( b, c, a, c ) : 1,  ( b, c, a, d ) : 1,  ( b, c, b, d ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, c ) : 3.333,  ( a, b, a, d ) : 3.333,  ( b, c, a, c ) : 3.333,  ( b, c, a, d ) : 3.333,  ( b, c, b, d ) : 3.333,
+      ( c, d, a, d ) : 3.333,  ( c, d, b, d ) : 3.333 } ;
+ 
+    spliting_node := data { } ;
+ 
+    sf_share := data { } ;
+ 
+    rcv_int := data { ( a, c ) : 1,  ( a, d ) : 1,  ( b, d ) : 1 } ;
+ 
+    sf_count := data { } ;
+ 
+    FlowSUM := 10 ;
+ 
+    sf_link_share := data { } ;
+ 
+    sf_bneck := data { } ;
+ 
+    sf_bneck_count := data { } ;
+ 
+    net_share_diff := data { } ;
+ 
+    net_share := data { } ;
+ 
+    net_group_id_bin := data { ( b, c, a, c ) : 1,  ( b, c, a, d ) : 1,  ( b, c, b, d ) : 1 } ;
+ 
+    unused_cap := data { ( a, b ) : 13.333,  ( c, d ) : 3.333 } ;
+ 
+    z := data { } ;
+ 

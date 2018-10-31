@@ -1,0 +1,56 @@
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(c,f,b,c,a,b,a,c)" and "subflow_iden_5(c,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(c,f,b,d,a,b,a,c)" and "subflow_iden_5(c,f,b,d,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(d,f,b,c,a,b,a,c)" and "subflow_iden_5(d,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+Only 3 out of 728 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,i)" and "sf_share_4(e,f,m,n,f,i)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,k,n,f,i)" and "sf_share_4(e,f,k,n,f,i)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,i,l,f,i)" and "sf_share_4(e,f,i,l,f,i)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+Only 3 out of 471 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,n)" and "sf_share_4(e,f,m,n,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,k,n,f,n)" and "sf_share_4(e,f,k,n,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,i,l,f,n)" and "sf_share_4(e,f,i,l,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+Only 3 out of 587 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,n)" and "sf_share_4(e,f,m,n,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,k,n,f,n)" and "sf_share_4(e,f,k,n,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,i,l,f,n)" and "sf_share_4(e,f,i,l,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+Only 3 out of 777 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(j,k,i,j,a,b,f,i)" and "subflow_iden_6(j,k,i,j,f,i,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(j,k,i,l,a,b,f,i)" and "subflow_iden_6(j,k,i,l,f,i,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(l,m,i,j,a,b,f,i)" and "subflow_iden_6(l,m,i,j,f,i,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+Only 3 out of 552 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(j,k,i,j,a,b,f,i)" and "subflow_iden_6(j,k,i,j,f,i,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(j,k,i,l,a,b,f,i)" and "subflow_iden_6(j,k,i,l,f,i,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(l,m,i,j,a,b,f,i)" and "subflow_iden_6(l,m,i,j,f,i,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+Only 3 out of 549 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,n)" and "sf_share_4(e,f,m,n,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,k,n,f,n)" and "sf_share_4(e,f,k,n,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,i,l,f,n)" and "sf_share_4(e,f,i,l,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 5 in user-defined function section "MainExecution".
+Only 3 out of 587 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.

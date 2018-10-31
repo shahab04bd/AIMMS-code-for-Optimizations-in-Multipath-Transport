@@ -1,0 +1,85 @@
+﻿    V := data { a, b, c, d, e, f } ;
+ 
+    A := data { ( a, b ), ( a, c ), ( a, d ), ( b, c ), ( b, d ), ( b, e ), ( c, e ), ( c, f ), ( d, e ), ( d, f ), ( e, f ) } ;
+ 
+ 
+    cap := data table
+    b   c   d   e   f
+!  --  --  --  --  --
+a  30  30  30
+b      20  20  20
+c              20  30
+d              20  30
+e                  30
+    ;
+ 
+ 
+    K := data { ( a, c ), ( a, d ), ( a, e ), ( a, f ), ( b, f ) } ;
+ 
+    phi := data { ( a, c ) : 20,  ( a, d ) : 30,  ( a, e ) : 20,  ( a, f ) : 20,  ( b, f ) : 30 } ;
+ 
+ 
+    sf_count := data
+    { ( a, b, a, c ) : 1,  ( a, b, a, d ) : 1,  ( a, c, a, c ) : 1,  ( a, c, a, e ) : 1,  ( a, c, a, f ) : 1,  ( a, d, a, d ) : 1,
+      ( a, d, a, e ) : 1,  ( a, d, a, f ) : 1,  ( b, c, a, c ) : 1,  ( b, c, b, f ) : 1,  ( b, d, a, d ) : 1,  ( b, e, b, f ) : 1,
+      ( c, e, a, e ) : 1,  ( c, f, a, f ) : 1,  ( c, f, b, f ) : 1,  ( d, e, a, e ) : 1,  ( d, e, a, f ) : 1,  ( e, f, a, f ) : 1,
+      ( e, f, b, f ) : 1 } ;
+ 
+
+
+ 
+    y := data
+    { ( a, b, a, d ) : 1,  ( a, c, a, c ) : 1,  ( a, c, a, e ) : 1,  ( a, c, a, f ) : 1,  ( a, d, a, d ) : 1,  ( a, d, a, e ) : 1,
+      ( a, d, a, f ) : 1,  ( b, c, a, c ) : 1,  ( b, c, b, f ) : 1,  ( b, e, b, f ) : 1,  ( d, e, a, f ) : 1 } ;
+ 
+ 
+    f := data
+    { ( a, b, a, c ) : 10,  ( a, b, a, d ) : 20,  ( a, c, a, c ) : 10,  ( a, c, a, e ) : 10,  ( a, c, a, f ) : 10,
+      ( a, d, a, d ) : 10,  ( a, d, a, e ) : 10,  ( a, d, a, f ) : 10,  ( b, c, a, c ) : 10,  ( b, c, b, f ) : 10,
+      ( b, d, a, d ) : 20,  ( b, e, b, f ) : 20,  ( c, e, a, e ) : 10,  ( c, f, a, f ) : 10,  ( c, f, b, f ) : 10,
+      ( d, e, a, e ) : 10,  ( d, e, a, f ) : 10,  ( e, f, a, f ) : 10,  ( e, f, b, f ) : 20 } ;
+ 
+    spliting_node := data { ( a, c ) : 1,  ( a, d ) : 1,  ( a, e ) : 1,  ( a, f ) : 1,  ( b, f ) : 1 } ;
+ 
+ 
+    sf_share := data
+    { ( a, b, a, b, a, c ) : 10,  ( a, b, a, b, a, d ) : 20,  ( a, b, b, c, a, c ) : 10,  ( a, b, b, d, a, d ) : 20,
+      ( a, c, a, c, a, c ) : 10,  ( a, c, a, c, a, e ) : 10,  ( a, c, a, c, a, f ) : 10,  ( a, c, c, e, a, e ) : 10,
+      ( a, c, c, f, a, f ) : 10,  ( a, d, a, d, a, d ) : 10,  ( a, d, a, d, a, e ) : 10,  ( a, d, a, d, a, f ) : 10,
+      ( a, d, d, e, a, e ) : 10,  ( a, d, d, e, a, f ) : 10,  ( a, d, e, f, a, f ) : 10,  ( b, c, b, c, b, f ) : 10,
+      ( b, c, c, f, b, f ) : 10,  ( b, e, b, e, b, f ) : 20,  ( b, e, e, f, b, f ) : 20 } ;
+ 
+    rcv_int := data { ( a, c ) : 2,  ( a, d ) : 2,  ( a, e ) : 2,  ( a, f ) : 2,  ( b, f ) : 2 } ;
+ 
+ 
+    sf_count := data
+    { ( a, b, a, c ) : 1,  ( a, b, a, d ) : 1,  ( a, c, a, c ) : 1,  ( a, c, a, e ) : 1,  ( a, c, a, f ) : 1,  ( a, d, a, d ) : 1,
+      ( a, d, a, e ) : 1,  ( a, d, a, f ) : 1,  ( b, c, a, c ) : 1,  ( b, c, b, f ) : 1,  ( b, d, a, d ) : 1,  ( b, e, b, f ) : 1,
+      ( c, e, a, e ) : 1,  ( c, f, a, f ) : 1,  ( c, f, b, f ) : 1,  ( d, e, a, e ) : 1,  ( d, e, a, f ) : 1,  ( e, f, a, f ) : 1,
+      ( e, f, b, f ) : 1 } ;
+ 
+    FlowSUM := 120120 ;
+ 
+ 
+    sf_link_share := data
+    { ( a, b, a, c ) : 30,  ( a, b, a, d ) : 20,  ( a, c, a, c ) : 10,  ( a, c, a, e ) : 10,  ( a, c, a, f ) : 10,
+      ( a, d, a, d ) : 10,  ( a, d, a, e ) : 10,  ( a, d, a, f ) : 10,  ( b, c, a, c ) : 10,  ( b, c, b, f ) : 10,
+      ( b, d, a, d ) : 20,  ( b, e, b, f ) : 20,  ( c, e, a, e ) : 20,  ( c, f, a, f ) : 10,  ( c, f, b, f ) : 30,
+      ( d, e, a, e ) : 20,  ( d, e, a, f ) : 10,  ( e, f, a, f ) : 10,  ( e, f, b, f ) : 20 } ;
+ 
+ 
+    sf_bneck := data
+    { ( a, b, a, b, a, d ) : 1,  ( a, b, b, c, a, c ) : 1,  ( a, c, a, c, a, c ) : 1,  ( a, c, a, c, a, e ) : 1,
+      ( a, c, a, c, a, f ) : 1,  ( a, d, a, d, a, d ) : 1,  ( a, d, a, d, a, e ) : 1,  ( a, d, a, d, a, f ) : 1,
+      ( a, d, d, e, a, f ) : 1,  ( b, c, b, c, b, f ) : 1,  ( b, e, b, e, b, f ) : 1 } ;
+ 
+ 
+    sf_bneck_count := data
+    { ( a, b, a, d ) : 1,  ( a, c, a, c ) : 1,  ( a, c, a, e ) : 1,  ( a, c, a, f ) : 1,  ( a, d, a, d ) : 1,  ( a, d, a, e ) : 1,
+      ( a, d, a, f ) : 1,  ( b, c, a, c ) : 1,  ( b, c, b, f ) : 1,  ( b, e, b, f ) : 1,  ( d, e, a, f ) : 1 } ;
+ 
+ 
+    z := data
+    { ( a, b, a, c ) : 1,  ( a, b, a, d ) : 1,  ( a, c, a, c ) : 1,  ( a, c, a, e ) : 1,  ( a, c, a, f ) : 1,  ( a, d, a, d ) : 1,
+      ( a, d, a, e ) : 1,  ( a, d, a, f ) : 1,  ( b, c, b, f ) : 1,  ( b, e, b, f ) : 1 } ;
+ 

@@ -1,0 +1,124 @@
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(c,f,b,c,a,b,a,c)" and "subflow_iden_5(c,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(d,f,b,c,a,b,a,c)" and "subflow_iden_5(d,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(e,f,b,c,a,b,a,c)" and "subflow_iden_5(e,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 455 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(c,f,b,c,a,b,a,c)" and "subflow_iden_5(c,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(c,f,b,d,a,b,a,c)" and "subflow_iden_5(c,f,b,d,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(d,f,b,c,a,b,a,c)" and "subflow_iden_5(d,f,b,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 715 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,i)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,i)" and "sf_share_4(e,f,m,n,f,i)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,k,n,f,i)" and "sf_share_4(f,i,k,n,i,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 499 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,n)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,n)" and "sf_share_4(e,f,m,n,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,k,n,f,n)" and "sf_share_4(f,i,k,n,i,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 610 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(f,i,m,n,i,k)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(e,f,m,n,f,n)" and "sf_share_4(f,i,m,n,i,k)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(c,f,m,n,f,n)" and "sf_share_4(e,f,m,n,f,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 837 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(f,i,m,n,i,m)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(f,i,m,n,i,k)" and "sf_share_4(f,i,m,n,i,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(f,i,k,n,i,k)" and "sf_share_4(f,i,k,n,i,n)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 594 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Syntax error at line 5 in the file Topology-7_capacity-1_flow-1.txt, column 43.
+The symbol "(" is not expected.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(b,d,a,b,a,b,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(b,d,a,c,a,b,n,a)" and "subflow_iden_6(b,d,a,c,n,a,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(b,d,a,b,a,c,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,c)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 254 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Syntax error at line 5 in the file Topology-7_capacity-1_flow-2.txt, column 43.
+The symbol "(" is not expected.
+Syntax error at line 5 in the file Topology-7_capacity-1_flow-2.txt, column 43.
+The symbol "(" is not expected.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(b,d,a,b,a,b,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(c,d,a,c,a,b,n,a)" and "subflow_iden_6(c,d,a,c,n,a,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(b,d,a,b,a,c,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,c)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 339 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Syntax error at line 5 in the file Topology-7_capacity-1_flow-3.txt, column 43.
+The symbol "(" is not expected.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(b,d,a,b,a,b,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(c,d,a,c,a,b,n,a)" and "subflow_iden_6(c,d,a,c,n,a,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_6(b,d,a,b,a,c,n,a)" and "subflow_iden_6(b,d,a,b,n,a,a,c)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 257 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Syntax error at line 5 in the file Topology-7_capacity-1_flow-4.txt, column 43.
+The symbol "(" is not expected.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(d,g,b,d,g,h)" and "sf_share_4(n,a,b,d,a,d)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(d,g,b,d,g,h)" and "sf_share_4(e,g,b,d,g,h)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "sf_share_4(e,g,a,c,g,h)" and "sf_share_4(n,a,a,c,a,d)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 501 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Input/output error at line 1 in user-defined function section "MainExecution".
+The file "Topology-7_capacity-1_flow-4.txt" cannot be opened: No such file or directory.
+Syntax error at line 8 in the file Topology-8_capacity-1_flow-1.txt, column 169.
+The symbol ";" is not expected.
+Semantic error at line 11 in the file Topology-8_capacity-1_flow-1.txt, column 26.
+The quoted element 'm' cannot be inserted into the compound set "(V,V)".  The notation  TUPLE( '..', ... '..' )  can be used to find that element.  The notation  {('..', ... '..')}  can be used to insert that element.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,b,a,b,a,c)" and "subflow_iden_5(i,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,c,a,b,a,c)" and "subflow_iden_5(i,h,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(g,h,a,b,a,b,a,c)" and "subflow_iden_5(g,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 198 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Syntax error at line 8 in the file Topology-8_capacity-1_flow-2.txt, column 169.
+The symbol ";" is not expected.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(b,d,a,b,a,b,a,c)" and "subflow_iden_5(b,d,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(b,d,a,c,a,b,a,c)" and "subflow_iden_5(b,d,a,c,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(c,d,a,b,a,b,a,c)" and "subflow_iden_5(c,d,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 269 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
+Syntax error at line 8 in the file Topology-8_capacity-1_flow-3.txt, column 169.
+The symbol ";" is not expected.
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(b,d,a,b,a,b,a,c)" and "subflow_iden_5(b,d,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(c,d,a,b,a,b,a,c)" and "subflow_iden_5(c,d,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+The rows "subflow_iden_5(i,h,a,b,a,b,a,c)" and "subflow_iden_5(i,h,a,b,a,c,a,b)" are equal in the generated mathematical program "max_min".  This may lead to non-unique shadow prices.  For more information regarding potential causes and consequences, see the help associated with the option "Warning_duplicate_row".
+Warning at line 4 in user-defined function section "MainExecution".
+Only 3 out of 371 duplicate row warnings were reported.  See also option limit_reported_duplicate_column_row_warnings.
